@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1688817323356.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3264271624",
+    "id" : "19705961",
+    "lastKnownWriteTime" : 1688817330,
+    "last_content_update" : 1688817330306,
+    "path" : "E:/Macau/AirFlow/Teng202101/RespirAnalyzer/R/MFDFAplot.fn.R",
+    "project_path" : "R/MFDFAplot.fn.R",
+    "properties" : {
+        "cursorPosition" : "0,40",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 25,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

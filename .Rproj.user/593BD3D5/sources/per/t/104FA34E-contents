@@ -1,0 +1,44 @@
+#' Function to calculate the power spectral density (PSD)
+#'
+#' @description  function to calculate the power spectral density (PSD)
+#' of Peak-to-Peak intervals series.
+#'
+#' @param series A numeric vector, with data for a regularly spaced time series.
+#' @param Fs sampling frequency of respiratory data
+#' @param plot whether to draw the plot of log power vs. log frequency
+#'
+#' @return a value of spectral exponent(beta) which the the slope of the  of the fitting line on plot of log power vs. log frequency
+#'
+#' @examples data("TestData")
+#' Fs <- 50
+#' Peaks <- find.peaks(Data[,2],Fs)
+#' Peaks=find.peaks(Data[,2],Fs)
+#' PP_interval=diff(Peaks[,1])/Fs
+#' LowPSD(series,Fs,plot=T)
+#'
+LowPSD <- function(series,Fs,plot=T){
+  A<- series-mean(series)
+  n=length(series)
+  x=1:n
+  W<- 1-(2*x/(n+1)-1)^2
+  B=A*W
+  k=(B[n]-B[1])/(n-1)
+  b=-(B[n]-B[1]*n)/(n-1)
+  y=k*x+b
+  C=B-y
+  #####
+  #####
+  Y=fft(C)
+  f=Fs*(2:ceiling(n/2))/n
+  position=which(f>Fs/8&f<Fs/2)
+  P=abs(Y*Conj(Y)/n)
+  dev.new()
+  x=log10(f[position]);y=log10(P[position])
+  plot(x,y,"l",
+       xlab="log10(frequency)",ylab="log10(power)")
+  cor(x,y)
+  fit<-lm(y~x)
+  slope <- coef(fit)
+  abline(fit)
+  return(slope)
+}

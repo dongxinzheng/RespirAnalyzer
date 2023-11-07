@@ -1,0 +1,140 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/MFDFA.cpp",
+                "kind" : 6,
+                "line" : 12,
+                "name" : "MFDFA(const NumericVector, const IntegerVector, const int, const NumericVector)",
+                "parent_name" : "",
+                "usr" : "c:@F@MFDFA#1$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#1$@N@Rcpp@C@Vector>#VI13#@N@Rcpp@CT>1#T@PreserveStorage#1I#1S0_#"
+            },
+            {
+                "column" : 15,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/MFDFA.cpp",
+                "kind" : 6,
+                "line" : 70,
+                "name" : "polyfitCoef(NumericVector, NumericVector, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@polyfitCoef#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#"
+            },
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/MFDFA.cpp",
+                "kind" : 6,
+                "line" : 77,
+                "name" : "polyfitY(NumericVector, NumericVector, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@polyfitY#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#"
+            },
+            {
+                "column" : 5,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/MFDFA.cpp",
+                "kind" : 6,
+                "line" : 105,
+                "name" : "polyfit(const double *const, const double *const, unsigned int, unsigned int, double *)",
+                "parent_name" : "",
+                "usr" : "c:@F@polyfit#1*1d#1S0_#i#i#*d#"
+            }
+        ],
+        "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/MFDFA.cpp",
+        "file_last_write" : 1570784780
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 39,
+                "name" : "Mse(Rcpp::String)",
+                "parent_name" : "",
+                "usr" : "c:@F@Mse#$@N@Rcpp@C@String#"
+            },
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "MseDo(int, char **)",
+                "parent_name" : "",
+                "usr" : "c:@F@MseDo#I#**C#"
+            },
+            {
+                "column" : 9,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 309,
+                "name" : "array(int)",
+                "parent_name" : "",
+                "usr" : "c:@F@array#I#"
+            },
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 320,
+                "name" : "ReadData",
+                "parent_name" : "",
+                "usr" : "c:@F@ReadData#"
+            },
+            {
+                "column" : 8,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 333,
+                "name" : "StandardDeviation",
+                "parent_name" : "",
+                "usr" : "c:@F@StandardDeviation#"
+            },
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 347,
+                "name" : "CoarseGraining(int)",
+                "parent_name" : "",
+                "usr" : "c:@F@CoarseGraining#I#"
+            },
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 360,
+                "name" : "SampleEntropy(int, double, double, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@SampleEntropy#I#d#d#I#"
+            },
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 390,
+                "name" : "PrintResults(int)",
+                "parent_name" : "",
+                "usr" : "c:@F@PrintResults#I#"
+            },
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 418,
+                "name" : "PrintAverageResults(int)",
+                "parent_name" : "",
+                "usr" : "c:@F@PrintAverageResults#I#"
+            },
+            {
+                "column" : 6,
+                "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+                "kind" : 6,
+                "line" : 456,
+                "name" : "usage",
+                "parent_name" : "",
+                "usr" : "c:@F@usage#"
+            }
+        ],
+        "file" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/src/mseLong.cpp",
+        "file_last_write" : 1570784404
+    }
+]

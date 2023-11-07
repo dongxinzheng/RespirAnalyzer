@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1581684471335.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3641119181",
+    "id" : "104FA34E",
+    "lastKnownWriteTime" : 1584426043,
+    "last_content_update" : 1584426043904,
+    "path" : "C:/Users/Tboy/Desktop/Rpackage/AirFlow/R/LowPSD.R",
+    "project_path" : "R/LowPSD.R",
+    "properties" : {
+        "cursorPosition" : "16,26",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

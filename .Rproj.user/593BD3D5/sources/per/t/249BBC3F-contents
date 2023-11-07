@@ -1,0 +1,72 @@
+find.peaks<-function(y,Fs,W1=FALSE, W2=FALSE,lowpass=TRUE,
+                     freq=5,filter=TRUE){
+  # function to find the peak-to-peak intervals of a airflow signal.
+
+  # ARGUMENTS
+
+  # y: A numeric vector, with respiratory data for a regularly spaced time series.
+  # Fs: sampling frequency of respiratory data
+
+  # VALUE
+  # a dataframe for the information of peaks. "PeakIndex" is the position of
+  # the peaks and "PeakHeight" is the height of the peaks
+
+  # x[is.na(x)]=0
+  # bf <- signal::butter(2, 2/Fs, type="low")
+  # y <- signal::filtfilt(bf, x)
+  #
+  # # N <- length(y)
+  # # id=vector(length = N)
+  # # for (m in 1:(N-Fs)){
+  # #   top = which.max(y[(m):(m+Fs)])
+  # #   id[m+Fs/2]=top
+  # # }
+  # # PeakIndex <- which(id==Fs/2+1)
+  # # PeakHeight <- y[PeakIndex]
+  # Range = boxplot(Data[1:15000,2], plot=FALSE)$stats
+  # Thre <- max(Range[5])-min(Range[1])
+  # Peak <-pracma:: findpeaks(y,zero = "0", nups=floor(Fs/20),ndowns=floor(Fs/20),sortstr=F,
+  #                           minpeakdistance=floor(Fs/10),threshold =0.08*Thre)
+  # PeakIndex <- Peak[,2]; PeakHeight <- Peak[,1]
+  # result <- data.frame(PeakIndex,PeakHeight)
+  # result <- result[order(result[,1]),]
+  # return(result)
+# }
+
+  if (lowpass){
+    bf <- signal::butter(2, freq/Fs, type="low")
+    y <- signal::filtfilt(bf,y)
+  }
+  if (!W1){
+    W1 <- 0.4*Fs
+  }
+  if (!W2){
+    W2 <- 2*Fs
+  }
+  series1 <- MovingAverage(y,W1)
+  series2 <- MovingAverage(y,W2)
+  difference <- series1-series2
+  A <- pracma::findpeaks(difference,zero = "0", nups=floor(Fs/20),ndowns=floor(Fs/20),
+                 sortstr=F,minpeakdistance=floor(Fs/10))
+  B <- A[order(A[,2]),]
+  PeakIndex <- B[,2]; PeakHeight <- B[,1]
+  if(filter){
+    # for (i in 1:nrow(B)){
+    #   peak <- y[B[i,2]]
+    # }
+    C <- B[which(y[B[,2]]>y[B[,3]]),]
+    C <- C[which(y[C[,2]]>y[C[,4]]),]
+    # scope <- matrix(nrow = nrow(B), ncol = 2)
+    # for (i in 1:nrow(B)){
+    #   scope[i,1] <- (difference[B[i,2]]-difference[B[i,3]])/(B[i,2]-B[i,3])
+    #   scope[i,2] <- (difference[B[i,2]]-difference[B[i,4]])/(B[i,4]-B[i,2])
+    # }
+    # threshold <- c(Para * median(scope[,1]),Para * median(scope[,2]))
+    # C <- B[which(scope[,1] > threshold[1]),]
+    # C <- C[which(C[,2] > threshold[2]),]
+    PeakIndex <- C[,2]; PeakHeight <- C[,1]
+  }
+  result <- data.frame(PeakIndex,PeakHeight)
+  result <- result[order(result[,1]),]
+  return(result)
+ }

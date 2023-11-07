@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1688813986412.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2230064479",
+    "id" : "97CBD1D2",
+    "lastKnownWriteTime" : 1610935105,
+    "last_content_update" : 1610935105,
+    "path" : "E:/Macau/AirFlow/Teng202101/RespirAnalyzer/man/Data.Rd",
+    "project_path" : "man/Data.Rd",
+    "properties" : {
+    },
+    "read_only" : true,
+    "read_only_alternatives" : [
+        "R/Data.R"
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_doc"
+}

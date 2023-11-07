@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1688817353277.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2986098257",
+    "id" : "F0946BD6",
+    "lastKnownWriteTime" : 1688817358,
+    "last_content_update" : 1688817358412,
+    "path" : "E:/Macau/AirFlow/Teng202101/RespirAnalyzer/R/Seriesplot.fn.R",
+    "project_path" : "R/Seriesplot.fn.R",
+    "properties" : {
+        "cursorPosition" : "23,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 29,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

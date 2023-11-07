@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1691627997098.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1782557131",
+    "id" : "EAC07DC1",
+    "lastKnownWriteTime" : 1699172138,
+    "last_content_update" : 1699172138445,
+    "path" : "E:/Macau/AirFlow/Teng202101/RespirAnalyzer/src/MFDFA.cpp",
+    "project_path" : "src/MFDFA.cpp",
+    "properties" : {
+        "cursorPosition" : "15,2",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 22,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

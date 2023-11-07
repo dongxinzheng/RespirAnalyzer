@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1688814024313.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3261907296",
+    "id" : "19EA3311",
+    "lastKnownWriteTime" : 1688814607,
+    "last_content_update" : 1688814607,
+    "path" : "E:/Macau/AirFlow/Teng202101/RespirAnalyzer/man/find.peaks.Rd",
+    "project_path" : "man/find.peaks.Rd",
+    "properties" : {
+        "cursorPosition" : "36,1",
+        "scrollLine" : "0"
+    },
+    "read_only" : true,
+    "read_only_alternatives" : [
+        "R/find.peaks.R"
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_doc"
+}
